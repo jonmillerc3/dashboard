@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///Users/jonmiller/Downloads/index_4.html -->
+<!-- saved from url=(0046)file:///Users/jonmiller/Downloads/index_5.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -264,7 +264,7 @@ body {
     <div class="logo">⬡ Propane Intelligence</div>
     <div class="header-tag">EIA Weekly · 2017–2026</div>
   </div>
-  <div class="last-update"><span class="pulse"></span>Prices: Jun 17, 2026 · EIA: Jun 12, 2026</div>
+  <div class="last-update"><span class="pulse"></span><span id="hdr-dates">Prices: Jun 17, 2026 · EIA: Jun 12, 2026</span></div>
 </div>
 
 <div class="tabs">
@@ -288,20 +288,20 @@ body {
     </div>
     <div class="kpi">
       <div class="kpi-label">Conway Price</div>
-      <div class="kpi-value" style="color:var(--amber2)">$0.662</div>
-      <div class="kpi-sub">$/gal · Jun 17 (latest)</div>
+      <div class="kpi-value" style="color:var(--amber2)" id="ov-cwy">$0.662</div>
+      <div class="kpi-sub" id="ov-cwy-sub">$/gal · Jun 17 (latest)</div>
       <div class="kpi-delta neutral">52-wk: $0.56–$0.96</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Mt Belvieu (TET)</div>
-      <div class="kpi-value" style="color:var(--amber)">$0.741</div>
-      <div class="kpi-sub">$/gal · spread: $0.079</div>
+      <div class="kpi-value" style="color:var(--amber)" id="ov-tet">$0.741</div>
+      <div class="kpi-sub" id="ov-tet-sub">$/gal · spread: $0.079</div>
       <div class="kpi-delta neutral">52-wk: $0.62–$0.97</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">WTI Crude</div>
-      <div class="kpi-value" style="color:var(--blue2)">$76.79</div>
-      <div class="kpi-sub">/bbl · Jun 17 · C3:CL = 36.2%</div>
+      <div class="kpi-value" style="color:var(--blue2)" id="ov-wti">$76.79</div>
+      <div class="kpi-sub" id="ov-wti-sub">/bbl · Jun 17 · C3:CL = 36.2%</div>
       <div class="kpi-delta warn">▲ Hormuz premium</div>
     </div>
     <div class="kpi">
@@ -328,7 +328,7 @@ body {
         <div class="legend-item"><div class="legend-swatch" style="background:var(--teal)"></div>Mt Belvieu (TET)</div>
         <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div>Inventory M bbls</div>
       </div>
-      <div class="chart-wrap" style="height:260px"><canvas id="chartOverview" role="img" aria-label="Dual axis chart of propane inventory and Conway price 2017-2026" width="790" height="286" style="display: block; box-sizing: border-box; height: 260px; width: 719px;"></canvas></div>
+      <div class="chart-wrap" style="height:260px"><canvas id="chartOverview" role="img" aria-label="Dual axis chart of propane inventory and Conway price 2017-2026" width="857" height="286" style="display: block; box-sizing: border-box; height: 260px; width: 779px;"></canvas></div>
     </div>
     <div class="card">
       <div class="card-title">Current Season Build vs 5-Year Average
@@ -339,7 +339,7 @@ body {
         <div class="legend-item"><div class="legend-swatch" style="background:rgba(0,0,0,0.25);height:2px;border-top:2px dashed rgba(0,0,0,0.25)"></div>5yr avg</div>
         <div class="legend-item"><div class="legend-swatch" style="background:var(--blue);opacity:0.5"></div>5yr range</div>
       </div>
-      <div class="chart-wrap" style="height:260px"><canvas id="chartBuild" role="img" aria-label="Cumulative build comparison current season vs 5 year average" width="790" height="286" style="display: block; box-sizing: border-box; height: 260px; width: 719px;"></canvas></div>
+      <div class="chart-wrap" style="height:260px"><canvas id="chartBuild" role="img" aria-label="Cumulative build comparison current season vs 5 year average" width="857" height="286" style="display: block; box-sizing: border-box; height: 260px; width: 779px;"></canvas></div>
     </div>
   </div>
 
@@ -354,13 +354,13 @@ body {
         <div class="legend-item"><div class="legend-dot" style="background:#dc2626"></div>2026 (current)</div>
         <div class="legend-item"><div class="legend-swatch" style="background:rgba(0,0,0,0.25);height:2px;border-top:2px dashed rgba(0,0,0,0.3)"></div>9-yr avg 60.0M</div>
       </div>
-      <div class="chart-wrap" style="height:155px"><canvas id="chartSameWeek" role="img" aria-label="Same week of year inventory comparison 2017 to 2026" width="506" height="170" style="display: block; box-sizing: border-box; height: 155px; width: 460px;"></canvas></div>
+      <div class="chart-wrap" style="height:155px"><canvas id="chartSameWeek" role="img" aria-label="Same week of year inventory comparison 2017 to 2026" width="550" height="170" style="display: block; box-sizing: border-box; height: 155px; width: 500px;"></canvas></div>
     </div>
     <div class="card">
       <div class="card-title">Export Growth Trajectory
         <span class="card-badge badge-amber">+131% since 2017</span>
       </div>
-      <div class="chart-wrap" style="height:180px"><canvas id="chartExpGrowth" role="img" aria-label="Annual export volumes 2017 to 2026" width="506" height="198" style="display: block; box-sizing: border-box; height: 180px; width: 460px;"></canvas></div>
+      <div class="chart-wrap" style="height:180px"><canvas id="chartExpGrowth" role="img" aria-label="Annual export volumes 2017 to 2026" width="550" height="198" style="display: block; box-sizing: border-box; height: 180px; width: 500px;"></canvas></div>
     </div>
     <div class="card">
       <div class="card-title">Season High / Low Water Marks
@@ -371,7 +371,7 @@ body {
         <div class="legend-item"><div class="legend-swatch" style="background:rgba(239,68,68,0.7)"></div>Season low</div>
         <div class="legend-item"><div class="legend-swatch" style="background:rgba(37,99,235,0.5)"></div>Start inventory</div>
       </div>
-      <div class="chart-wrap" style="height:155px"><canvas id="chartSeasonHiLo" role="img" aria-label="Season high low water marks bar chart" width="506" height="170" style="display: block; box-sizing: border-box; height: 155px; width: 460px;"></canvas></div>
+      <div class="chart-wrap" style="height:155px"><canvas id="chartSeasonHiLo" role="img" aria-label="Season high low water marks bar chart" width="550" height="170" style="display: block; box-sizing: border-box; height: 155px; width: 500px;"></canvas></div>
     </div>
   </div>
 
@@ -383,35 +383,35 @@ body {
   <div class="kpi-row">
     <div class="kpi">
       <div class="kpi-label">Conway (CWY)</div>
-      <div class="kpi-value" style="color:var(--amber2)">$0.662</div>
-      <div class="kpi-sub">$/gal · Jun 17 (latest)</div>
+      <div class="kpi-value" style="color:var(--amber2)" id="pr-cwy">$0.662</div>
+      <div class="kpi-sub" id="pr-cwy-sub">$/gal · Jun 17 (latest)</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Mt Belvieu (TET)</div>
-      <div class="kpi-value" style="color:var(--amber)">$0.741</div>
-      <div class="kpi-sub">$/gal · Jun 17 (latest)</div>
+      <div class="kpi-value" style="color:var(--amber)" id="pr-tet">$0.741</div>
+      <div class="kpi-sub" id="pr-tet-sub">$/gal · Jun 17 (latest)</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">NS Spread (TET–CWY)</div>
-      <div class="kpi-value" style="color:var(--blue2)">$0.0787</div>
-      <div class="kpi-sub">TET–CWY · Jun 17 (latest)</div>
+      <div class="kpi-value" style="color:var(--blue2)" id="pr-ns">$0.0787</div>
+      <div class="kpi-sub" id="pr-ns-sub">TET–CWY · Jun 17 (latest)</div>
       <div class="kpi-delta warn">52wk avg: $0.062</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">WTI Crude</div>
-      <div class="kpi-value" style="color:var(--text)">$76.79</div>
-      <div class="kpi-sub">/bbl · Jun 17 (latest)</div>
+      <div class="kpi-value" style="color:var(--text)" id="pr-wti">$76.79</div>
+      <div class="kpi-sub" id="pr-wti-sub">/bbl · Jun 17 (latest)</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">C3:WTI Ratio</div>
-      <div class="kpi-value" style="color:var(--teal)">36.2%</div>
-      <div class="kpi-sub">CWY/WTI per gal · Jun 17</div>
+      <div class="kpi-value" style="color:var(--teal)" id="pr-cwyratio">36.2%</div>
+      <div class="kpi-sub" id="pr-cwyratio-sub">CWY/WTI per gal · Jun 17</div>
       <div class="kpi-delta neutral">Hist avg: ~46%</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">TET:WTI Ratio</div>
-      <div class="kpi-value" style="color:var(--purple)">40.5%</div>
-      <div class="kpi-sub">TET/WTI per gal · Jun 17</div>
+      <div class="kpi-value" style="color:var(--purple)" id="pr-tetratio">40.5%</div>
+      <div class="kpi-sub" id="pr-tetratio-sub">TET/WTI per gal · Jun 17</div>
       <div class="kpi-delta neutral">Hist avg: ~49%</div>
     </div>
   </div>
@@ -1839,9 +1839,102 @@ function buildCharts(page){
 }
 
 // ── INIT ─────────────────────────────────────────
+// ════════════════ LIVE DAILY PRICE LAYER ════════════════
+// Fetches daily prices from the published Google Sheet CSV and updates the
+// price-driven KPI cards. Falls back silently to the baked-in values if the
+// sheet is unreachable, so the dashboard never breaks.
+const LIVE_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf88vAS4KWARy9iLKk77TcMHr9-U_Y1sU-cvVBPvjJnynRt9O2CRWxWxBn9E5PDuOF_ATlvyVu7fNS/pub?gid=0&single=true&output=csv";
+
+function fmtDateShort(iso){
+  // iso like 2026-06-18 -> "Jun 18"
+  const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const p=iso.split('-');
+  if(p.length!==3) return iso;
+  return months[parseInt(p[1],10)-1]+' '+parseInt(p[2],10);
+}
+
+function setText(id,txt){ const el=document.getElementById(id); if(el) el.textContent=txt; }
+
+async function loadLivePrices(){
+  try {
+    const res = await fetch(LIVE_CSV_URL, {cache:'no-store'});
+    if(!res.ok) throw new Error('fetch failed '+res.status);
+    const text = await res.text();
+    const lines = text.trim().split(/\r?\n/);
+    if(lines.length < 2) throw new Error('no data rows');
+
+    // Parse header to find column positions
+    const header = lines[0].split(',').map(h=>h.trim().toLowerCase());
+    const di = header.indexOf('date');
+    const ci = header.indexOf('conway');
+    const ti = header.indexOf('tet');
+    const wi = header.indexOf('wti');
+    if(di<0||ci<0||ti<0||wi<0) throw new Error('missing columns');
+
+    // Parse all rows, validate, sort by date ascending
+    const rows = [];
+    for(let i=1;i<lines.length;i++){
+      const c = lines[i].split(',');
+      if(c.length < 4) continue;
+      const date = (c[di]||'').trim();
+      const cwy = parseFloat(c[ci]);
+      const tet = parseFloat(c[ti]);
+      const wti = parseFloat(c[wi]);
+      // Guardrails: ignore blank/out-of-range values
+      if(!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+      if(!(cwy>0.1 && cwy<3.0)) continue;
+      if(!(tet>0.1 && tet<3.0)) continue;
+      if(!(wti>20 && wti<200)) continue;
+      rows.push({date,cwy,tet,wti});
+    }
+    if(!rows.length) throw new Error('no valid rows');
+    rows.sort((a,b)=>a.date.localeCompare(b.date));
+    const latest = rows[rows.length-1];
+
+    // Compute derived values
+    const ns = latest.tet - latest.cwy;
+    const cwyRatio = latest.cwy / (latest.wti/42) * 100;
+    const tetRatio = latest.tet / (latest.wti/42) * 100;
+    const ds = fmtDateShort(latest.date);
+
+    // ── Update Overview KPIs
+    setText('ov-cwy', '$'+latest.cwy.toFixed(3));
+    setText('ov-cwy-sub', '$/gal · '+ds+' (latest)');
+    setText('ov-tet', '$'+latest.tet.toFixed(3));
+    setText('ov-tet-sub', '$/gal · spread: $'+ns.toFixed(3));
+    setText('ov-wti', '$'+latest.wti.toFixed(2));
+    setText('ov-wti-sub', '/bbl · '+ds+' · C3:CL = '+cwyRatio.toFixed(1)+'%');
+
+    // ── Update Price & WTI KPIs
+    setText('pr-cwy', '$'+latest.cwy.toFixed(3));
+    setText('pr-cwy-sub', '$/gal · '+ds+' (latest)');
+    setText('pr-tet', '$'+latest.tet.toFixed(3));
+    setText('pr-tet-sub', '$/gal · '+ds+' (latest)');
+    setText('pr-ns', '$'+ns.toFixed(4));
+    setText('pr-ns-sub', 'TET–CWY · '+ds+' (latest)');
+    setText('pr-wti', '$'+latest.wti.toFixed(2));
+    setText('pr-wti-sub', '/bbl · '+ds+' (latest)');
+    setText('pr-cwyratio', cwyRatio.toFixed(1)+'%');
+    setText('pr-cwyratio-sub', 'CWY/WTI per gal · '+ds);
+    setText('pr-tetratio', tetRatio.toFixed(1)+'%');
+    setText('pr-tetratio-sub', 'TET/WTI per gal · '+ds);
+
+    // ── Update header date (prices portion only; keep EIA portion as-is)
+    const hdr = document.getElementById('hdr-dates');
+    if(hdr){
+      const eiaPart = hdr.textContent.split('·')[1] || '';
+      hdr.textContent = 'Prices: '+ds+', 2026 ·'+eiaPart;
+    }
+  } catch(e){
+    // Silent fallback — baked-in values remain. Log for debugging only.
+    console.warn('Live price fetch unavailable, using baked-in values:', e.message);
+  }
+}
+
 window.addEventListener('DOMContentLoaded',()=>{
   buildCharts('overview');
   window._chartsBuilt={overview:true};
+  loadLivePrices();
 });
 </script>
 
