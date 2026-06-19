@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///Users/jonmiller/Downloads/index_5.html -->
+<!-- saved from url=(0046)file:///Users/jonmiller/Downloads/index_6.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1522,10 +1522,13 @@ function buildCharts(page){
 
     const scatterDatasets=[];
     const yearGroups={};
+    const monthAbbr=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     RAW.forEach(r=>{
-      const yr=new Date(r[0].trim()).getFullYear();
+      const d=new Date(r[0].trim());
+      const yr=d.getFullYear();
+      const mo=d.getMonth();
       if(!yearGroups[yr])yearGroups[yr]=[];
-      if(r[1]&&r[2])yearGroups[yr].push({x:r[1],y:r[2]});
+      if(r[1]&&r[2])yearGroups[yr].push({x:r[1],y:r[2],mo:mo,dateLabel:monthAbbr[mo]+' '+yr});
     });
     Object.keys(yearGroups).forEach(yr=>{
       scatterDatasets.push({label:yr,data:yearGroups[yr],backgroundColor:yrColor(+yr)+'aa',pointRadius:4,pointHoverRadius:6});
@@ -1534,7 +1537,10 @@ function buildCharts(page){
       type:'scatter',
       data:{datasets:scatterDatasets},
       options:{responsive:true,maintainAspectRatio:false,
-        plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.dataset.label}: Inv ${c.parsed.x.toFixed(0)}M, CWY $${c.parsed.y.toFixed(3)}`}}},
+        plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>{
+          const p=c.raw;
+          return `${p.dateLabel}: Inv ${c.parsed.x.toFixed(0)}M, CWY $${c.parsed.y.toFixed(3)}`;
+        }}}},
         scales:{
           x:{title:{display:true,text:'Inventory (M bbls)',color:'#6b7280',font:{size:10}},ticks:{color:'#6b7280',font:{size:10},callback:v=>v+'M'},grid:{color:'rgba(0,0,0,0.08)'}},
           y:{title:{display:true,text:'Conway $/gal',color:'#6b7280',font:{size:10}},ticks:{color:'#6b7280',font:{size:10},callback:v=>'$'+v.toFixed(2)},grid:{color:'rgba(0,0,0,0.08)'}}
