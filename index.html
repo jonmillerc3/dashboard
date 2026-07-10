@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///Users/jonmiller/Downloads/index_6.html -->
+<!-- saved from url=(0046)file:///Users/jonmiller/Downloads/index_7.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Propane Market Intelligence Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./index_files/css2" rel="stylesheet">
-<script src="./index_files/chart.umd.min.js"></script>
+<link href="file:///Users/jonmiller/Downloads/index_files/css2" rel="stylesheet">
+<script src="file:///Users/jonmiller/Downloads/index_files/chart.umd.min.js"></script>
 <script>
 // Fallback: if Chart.js failed to load from the primary CDN, load from cdnjs
 if (typeof Chart === 'undefined') {
   document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"><\/script>');
 }
-</script>
+</script><script src="./index_files/chart.umd.min.js"></script>
 <style>
 :root {
   --bg: #f0f2f5;
@@ -268,17 +268,17 @@ body {
 </div>
 
 <div class="tabs">
-  <div class="tab active" onclick="showPage(&#39;overview&#39;)">Overview</div>
+  <div class="tab" onclick="showPage(&#39;overview&#39;)">Overview</div>
   <div class="tab" onclick="showPage(&#39;price&#39;)">Price &amp; WTI</div>
   <div class="tab" onclick="showPage(&#39;supply&#39;)">Supply Balance</div>
   <div class="tab" onclick="showPage(&#39;seasonal&#39;)">Seasonal Patterns</div>
   <div class="tab" onclick="showPage(&#39;signals&#39;)">Market Signals</div>
   <div class="tab" onclick="showPage(&#39;geopolitical&#39;)">Geopolitical Context</div>
-  <div class="tab" onclick="showPage(&#39;elnino&#39;)">El Niño Outlook</div>
+  <div class="tab active" onclick="showPage(&#39;elnino&#39;)">El Niño Outlook</div>
 </div>
 
 <!-- ════════════════ PAGE 1: OVERVIEW ════════════════ -->
-<div class="page active" id="page-overview">
+<div class="page" id="page-overview">
 
   <div class="kpi-row">
     <div class="kpi">
@@ -967,10 +967,10 @@ body {
 
 
 <!-- ════════════════ PAGE 7: EL NIÑO OUTLOOK ════════════════ -->
-<div class="page" id="page-elnino">
+<div class="page active" id="page-elnino">
   <div style="margin-bottom:16px">
     <div class="section-head">Super El Niño 2026–27 — Seasonal Demand Outlook for Propane Retailers</div>
-    <div style="font-size:12px;color:var(--text3);margin-top:4px">Source: NOAA CPC ENSO Diagnostic Discussion (11 Jun 2026) · IRI ENSO Quick Look (Jun 2026) · EIA demand data · CPC strong El Niño composites</div>
+    <div style="font-size:12px;color:var(--text3);margin-top:4px">Source: NOAA CPC ENSO Diagnostic Discussion (9 Jul 2026) · IRI ENSO Quick Look (Jun 2026) · ECMWF (1 Jul 2026) · EIA demand data · CPC strong El Niño composites</div>
   </div>
 
   <!-- KPI Row -->
@@ -978,16 +978,16 @@ body {
     <div class="kpi">
       <div class="kpi-label">ENSO Alert Status</div>
       <div class="kpi-value" style="color:var(--red2);font-size:18px">El Niño Advisory</div>
-      <div class="kpi-sub">NOAA CPC · Jul 6, 2026</div>
+      <div class="kpi-sub">NOAA CPC · Jul 9, 2026</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Niño 3.4 Index</div>
-      <div class="kpi-value" style="color:var(--red2);font-size:18px">+1.7°C</div>
-      <div class="kpi-sub">Wk of Jun 17 · intensifying</div>
+      <div class="kpi-value" style="color:var(--red2);font-size:18px">+1.2°C</div>
+      <div class="kpi-sub">Latest weekly (CPC 9 Jul) · peaked +1.7 mid-Jun</div>
     </div>
     <div class="kpi">
-      <div class="kpi-label">Very Strong Odds (NDJ)</div>
-      <div class="kpi-value" style="color:var(--red2);font-size:18px">63%</div>
+      <div class="kpi-label">Very Strong Odds (OND)</div>
+      <div class="kpi-value" style="color:var(--red2);font-size:18px">81%</div>
       <div class="kpi-sub">Ranks among largest since 1950</div>
     </div>
     <div class="kpi">
@@ -1022,21 +1022,23 @@ body {
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Data Refresh — As of July 1, 2026
+      <div class="card-title">Data Refresh — As of July 9, 2026
         <span class="card-badge badge-blue">Signal strengthening</span>
       </div>
       <div style="display:grid;grid-template-columns:1fr auto;gap:6px;font-size:12px;margin-bottom:8px">
         <div style="color:var(--text3);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:8px;border-top:1px solid var(--border)">Weekly Niño-3.4 SST</div>
-        <div style="text-align:right;padding-top:8px;border-top:1px solid var(--border)"><span style="color:var(--text3)">≈+0.9°C</span> → <strong style="color:var(--red2)">+1.7°C</strong> <span style="color:var(--red2);font-size:10px">↑ INTENSIFYING</span></div>
+        <div style="text-align:right;padding-top:8px;border-top:1px solid var(--border)"><span style="color:var(--text3)">+1.7°C (mid-Jun peak)</span> → <strong style="color:var(--red2)">+1.2°C</strong> <span style="color:var(--text3);font-size:10px">WEEKLY EASED · SEASONAL FIRM</span></div>
         <div style="color:var(--text3);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:6px;border-top:1px solid var(--border)">Subsurface heat 0–300m</div>
         <div style="text-align:right;padding-top:6px;border-top:1px solid var(--border)"><span style="color:var(--text3)">Elevated</span> → <strong style="color:var(--red2)">≈2× mid-Jun 2023</strong> <span style="color:var(--red2);font-size:10px">↑ SUPPORTIVE</span></div>
-        <div style="color:var(--text3);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:6px;border-top:1px solid var(--border)">CPC "very strong" odds NDJ</div>
-        <div style="text-align:right;padding-top:6px;border-top:1px solid var(--border)"><strong>63%</strong> → <strong>63%</strong> <span style="color:var(--text3);font-size:10px">UNCHANGED</span></div>
+        <div style="color:var(--text3);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:6px;border-top:1px solid var(--border)">CPC "very strong" odds</div>
+        <div style="text-align:right;padding-top:6px;border-top:1px solid var(--border)"><span style="color:var(--text3)">63% NDJ</span> → <strong style="color:var(--red2)">81% OND</strong> <span style="color:var(--red2);font-size:10px">↑ RAISED · WINDOW EARLIER</span></div>
+        <div style="color:var(--text3);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:6px;border-top:1px solid var(--border)">ECMWF peak forecast (1 Jul)</div>
+        <div style="text-align:right;padding-top:6px;border-top:1px solid var(--border)"><strong style="color:var(--red2)">&gt;+3.0°C</strong> <span style="color:var(--red2);font-size:10px">↑ SUPER · PEAK AS EARLY AS SEP</span></div>
         <div style="color:var(--text3);font-family:var(--mono);font-size:11px;text-transform:uppercase;padding-top:6px;border-top:1px solid var(--border)">Alert status · next update</div>
-        <div style="text-align:right;padding-top:6px;border-top:1px solid var(--border)"><strong>Advisory</strong> → <strong>Advisory</strong> <span style="color:var(--text3);font-size:10px">CPC 9 Jul</span></div>
+        <div style="text-align:right;padding-top:6px;border-top:1px solid var(--border)"><strong>Advisory</strong> → <strong>Advisory</strong> <span style="color:var(--text3);font-size:10px">CPC 9 Jul · next 13 Aug</span></div>
       </div>
       <div style="padding:10px 12px;background:var(--bg3);border-radius:5px;font-size:11px;color:var(--text2);line-height:1.6;border-left:3px solid var(--blue)">
-        Net: newest data reinforces the super El Niño base case — the regional GWHDD outlook stands. IRI's objective model frames strength as moderate-to-strong, a shade below CPC's "very strong" forecaster call.
+        Net: the 9 Jul CPC discussion raised the "very strong" odds to 81% for OND (from 63% NDJ) and put persistence through early spring 2027 at 97%. Early-July ECMWF runs push water temperatures past +3.0°C, possibly by September — a genuine "super" track that firms the regional GWHDD outlook and the 2015–16 demand-erosion analog. The latest weekly Niño-3.4 eased to +1.2°C off its mid-June +1.7 spike, but the seasonal signal and forecast distribution both strengthened.
       </div>
     </div>
   </div>
@@ -1218,7 +1220,7 @@ body {
     </div>
     <div style="margin-bottom:12px">
       <div style="font-size:11px;color:var(--text3);margin-bottom:6px">Peak Niño 3.4 anomaly by event. Dashed line = "very strong" threshold (+2.0°C). 2026–27 bars are projections.</div>
-      <div class="chart-wrap" style="height:160px"><canvas id="chartEnsoStrength" role="img" aria-label="Bar chart comparing peak El Nino strength across historical events and 2026-27 projection"></canvas></div>
+      <div class="chart-wrap" style="height:160px"><canvas id="chartEnsoStrength" role="img" aria-label="Bar chart comparing peak El Nino strength across historical events and 2026-27 projection" width="2756" height="320" style="display: block; box-sizing: border-box; height: 160px; width: 1378px;"></canvas></div>
     </div>
     <table style="width:100%;border-collapse:collapse;font-size:12px">
       <thead>
@@ -1560,7 +1562,7 @@ function buildCharts(page){
   if(page==='geopolitical') return;
   if(page==='elnino'){
     const ensoEvents=['1972-73','1982-83','1997-98','2015-16','2026-27 Base','2026-27 Extreme'];
-    const ensoStrength=[2.1,2.2,2.4,2.6,2.25,3.2];
+    const ensoStrength=[2.1,2.2,2.4,2.6,2.6,3.2];
     const ensoColors=['rgba(37,99,235,0.6)','rgba(37,99,235,0.6)','rgba(37,99,235,0.6)','rgba(37,99,235,0.6)','rgba(220,38,38,0.7)','rgba(220,38,38,0.35)'];
     new Chart(document.getElementById('chartEnsoStrength'),{
       type:'bar',
