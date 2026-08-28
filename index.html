@@ -1539,8 +1539,8 @@ function buildCharts(page){
       const chart = new Chart(document.getElementById(canvasId),{
         type:'bar',
         data:{labels:mnths,datasets:[
-          {label:'IQR band',data:boxData.map(s=>({y:[s.p25,s.p75]})),backgroundColor:color+'22',borderColor:color+'55',borderWidth:1,borderRadius:3,barPercentage:0.65,order:3},
-          {label:'P10-P90 range',data:boxData.map(s=>({y:[s.p10,s.p90]})),backgroundColor:color+'18',borderColor:color+'30',borderWidth:1,borderRadius:3,barPercentage:0.65,order:4},
+          {label:'IQR band',data:boxData.map(s=>[s.p25,s.p75]),backgroundColor:color+'22',borderColor:color+'55',borderWidth:1,borderRadius:3,barPercentage:0.65,order:3},
+          {label:'P10-P90 range',data:boxData.map(s=>[s.p10,s.p90]),backgroundColor:color+'18',borderColor:color+'30',borderWidth:1,borderRadius:3,barPercentage:0.65,order:4},
           {type:'line',label:'Median',data:boxData.map(s=>s.med),borderColor:color+'cc',borderDash:[5,4],borderWidth:2,pointRadius:0,fill:false,tension:0,order:2},
           {type:'line',label:'2026',data:actual2026,borderWidth:0,
             pointRadius:actual2026.map(v=>v!=null?8:0),
