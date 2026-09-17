@@ -446,10 +446,10 @@ body {
       <div class="card-title">NS Spread (Mt Belvieu – Conway) Over Time
         <span class="card-badge badge-amber">Currently elevated</span>
       </div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">TET minus CWY weekly. A wider spread signals export demand pulling Gulf stocks away from Midwest. Current $0.1225 is nearly 2× the 52-week average of $0.062 — Midwest buyers paying a relative discount, but export arb is active.</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">TET minus CWY weekly. A wider spread signals export demand pulling Gulf stocks away from Midwest. Current $0.091 is above the 52-week average of $0.074 — Gulf basis firm on export demand, Midwest buyers paying a relative discount.</div>
       <div class="legend">
         <div class="legend-item"><div class="legend-swatch" style="background:var(--blue)"></div>NS Spread (TET–CWY)</div>
-        <div class="legend-item"><div class="legend-swatch" style="background:rgba(0,0,0,0.25);height:2px;border-top:2px dashed rgba(0,0,0,0.3)"></div>52wk avg $0.062</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:rgba(0,0,0,0.25);height:2px;border-top:2px dashed rgba(0,0,0,0.3)"></div>52wk avg $0.074</div>
       </div>
       <div class="chart-wrap" style="height:220px"><canvas id="chartNSSpread" role="img" aria-label="NS spread TET minus Conway over time" width="1320" height="440" style="display: block; box-sizing: border-box; height: 220px; width: 660px;"></canvas></div>
     </div>
@@ -481,7 +481,7 @@ body {
 
   <div class="card" style="margin-top:16px">
     <div class="card-title">C3:WTI Ratio — Seasonal Distribution &amp; Buy Signal Analysis
-      <span class="card-badge badge-red">2026 at historic lows vs crude</span>
+      <span class="card-badge badge-amber">2026 cheap vs crude, above median absolute</span>
     </div>
     <div style="font-size:12px;color:var(--text2);margin-bottom:14px;line-height:1.7">
       This chart shows whether propane is cheap or expensive right now compared to crude oil, measured against how it normally looks at this time of year. Because propane usually tracks crude, the raw price alone doesn't tell you much, so this looks at <strong>propane's price as a percentage of crude's value per gallon</strong>. Lower means propane is cheap relative to crude; higher means expensive.<br><br>
@@ -514,7 +514,7 @@ body {
       </div>
     </div>
     <div style="margin-top:14px;padding:12px 16px;background:var(--bg3);border-radius:6px;border-left:3px solid var(--amber);font-size:12px;color:var(--text2);line-height:1.7">
-      <strong style="color:var(--amber2)">Current Signal (Sep 16, 2026):</strong> Conway:WTI is at <strong>31.9%</strong> — propane at Conway priced at 31.9 cents for every dollar of crude oil value per gallon. WTI crossed $100 and reached $102.43 by Sep 16, lifting Conway to 77.8¢ (60th shale-era percentile) and Belvieu to 86.8¢ (62nd percentile). Both hubs are now above the historical median for the first time this build season. Mt Belvieu:WTI at <strong>35.6%</strong> remains below the historical average of ~49%, though both ratios have moved meaningfully off their summer lows. On the supply side, the Sep 11 EIA week brought a second consecutive draw of -1.4M, pushing inventory to 109.1M. The build season is running at 67% of the 4-season average through week 24 — a 15.5M shortfall — and exports have been structurally elevated throughout, with the 4wk avg holding above 2.0M. The YoY surplus has narrowed to +10.2M, the tightest reading of the season.
+      <strong style="color:var(--amber2)">Current Signal (Sep 16, 2026):</strong> Conway:WTI is at <strong>31.9%</strong> — propane at Conway priced at 31.9 cents for every dollar of crude oil value per gallon. WTI crossed $100 and reached $102.43 by Sep 16, lifting Conway to 77.8¢ (60th shale-era percentile) and Belvieu to 86.8¢ (62nd percentile). Both hubs are now above the historical median for the first time this build season. Mt Belvieu:WTI at <strong>35.6%</strong> remains below the historical average of ~49%, though both ratios have moved meaningfully off their summer lows. On the supply side, the Sep 11 EIA week brought a -1.4M draw (following a +3.1M build the prior week and a draw two weeks prior), pushing inventory to 109.1M. The build season is running at 67% of the 4-season average through week 24 — a 15.5M shortfall — and exports have been structurally elevated throughout, with the 4wk avg holding above 2.0M. The YoY surplus has narrowed to +10.2M, the tightest reading of the season.
     </div>
   </div>
 
@@ -533,7 +533,7 @@ body {
           <div class="kpi" style="margin:0"><div class="kpi-label">Percentile</div><div class="kpi-value" style="font-size:20px">60th</div></div>
           <div class="kpi" style="margin:0"><div class="kpi-label">Era mean</div><div class="kpi-value" style="font-size:20px">74.5¢</div></div>
         </div>
-        <div class="chart-wrap" style="height:200px"><canvas id="chartCwyDist" role="img" aria-label="Distribution of monthly Conway propane prices 2012 to 2025, today at 34th percentile below the shale-era mean" width="1362" height="400" style="display: block; box-sizing: border-box; height: 200px; width: 681px;"></canvas></div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chartCwyDist" role="img" aria-label="Distribution of monthly Conway propane prices 2012 to 2025, today at 60th percentile above the shale-era median" width="1362" height="400" style="display: block; box-sizing: border-box; height: 200px; width: 681px;"></canvas></div>
       </div>
       <div>
         <div style="font-size:11px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px">Mt Belvieu (TET)</div>
@@ -542,11 +542,11 @@ body {
           <div class="kpi" style="margin:0"><div class="kpi-label">Percentile</div><div class="kpi-value" style="font-size:20px">62nd</div></div>
           <div class="kpi" style="margin:0"><div class="kpi-label">Era mean</div><div class="kpi-value" style="font-size:20px">79.1¢</div></div>
         </div>
-        <div class="chart-wrap" style="height:200px"><canvas id="chartTetDist" role="img" aria-label="Distribution of monthly Mt Belvieu propane prices 2012 to 2025, today at 36th percentile below the shale-era mean" width="1362" height="400" style="display: block; box-sizing: border-box; height: 200px; width: 681px;"></canvas></div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chartTetDist" role="img" aria-label="Distribution of monthly Mt Belvieu propane prices 2012 to 2025, today at 62nd percentile above the shale-era median" width="1362" height="400" style="display: block; box-sizing: border-box; height: 200px; width: 681px;"></canvas></div>
       </div>
     </div>
     <div style="margin-top:14px;padding:12px 16px;background:var(--bg3);border-radius:6px;border-left:3px solid var(--amber);font-size:12px;color:var(--text2);line-height:1.7">
-      <strong style="color:var(--amber2)">The verdict:</strong> Measured against the era we actually live in, today's price sits <strong>below the shale-era mean</strong> at both hubs — Conway at the 60th percentile, Mt Belvieu at the 62nd. So propane is genuinely soft, on three counts at once: below its era mean in absolute terms, historically cheap relative to crude, and sitting on a record inventory overhang. The supply picture supporting that softness has real staying power — US natural gas production should remain elevated for years as LNG export demand keeps pulling gas through processing, and the damaged Persian Gulf LNG infrastructure has only lengthened that runway. This is a market where the fundamentals and the relative-value signal are pointing the same direction at once.
+      <strong style="color:var(--amber2)">The verdict:</strong> The market is sending a split signal right now. In absolute terms, propane is <strong>above its shale-era median</strong> at both hubs — Conway at the 60th percentile, Mt Belvieu at the 62nd — meaning prices are higher than they've been in the majority of months since 2012. That is not soft; that is above average in price history. The relative story is different: C3:WTI ratios at 31.9% (Conway) and 35.6% (Belvieu) remain well below their historical averages of ~46% and ~49%, meaning propane has not kept pace with crude's surge past $100. Propane is cheap <em>relative to crude</em>, not cheap on its own. The supply picture adds its own tension: inventory at 109.1M is still historically extreme, a genuine bearish overhang in absolute terms, but the build season is running 33% behind the 4-season average and exports have been pulling hard enough to generate draws in back-to-back weeks separated by only one build. These are forces pulling in opposite directions. Retailers buying forward should be clear about which signal they are acting on.
     </div>
   </div>
 
@@ -609,7 +609,7 @@ body {
       <div class="card-title">Export Share of Production — Weekly %
         <span class="card-badge badge-red">Trending higher</span>
       </div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">When this exceeds 70%, domestic builds slow regardless of production growth. The 87.7% print on May 22 is anomalous.</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">When this exceeds 70%, domestic builds slow regardless of production growth. Season highs: 89.5% (Jul 3) and 87.7% (May 22) — both driven by VLGC loading surges.</div>
       <div class="chart-wrap" style="height:260px"><canvas id="chartExpPct" role="img" aria-label="Export percentage of production weekly trend" width="1320" height="520" style="display: block; box-sizing: border-box; height: 260px; width: 660px;"></canvas></div>
     </div>
   </div>
@@ -626,7 +626,7 @@ body {
       <div class="card-title">Annual Export Volume Growth
         <span class="card-badge badge-amber">+129% over decade</span>
       </div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">US exported 97M bbls annually in 2025. At the 2026 pace through July (annualized), that rises to ~103M. Every barrel exported competes with domestic supply.</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">US exported 97M bbls annually in 2025. At the 2026 pace through Sep 11 (annualized), that rises to ~104M. Every barrel exported competes with domestic supply.</div>
       <div class="chart-wrap" style="height:220px"><canvas id="chartExpBar" role="img" aria-label="Annual export volume bar chart 2017 to 2026" width="1320" height="440" style="display: block; box-sizing: border-box; height: 220px; width: 660px;"></canvas></div>
     </div>
   </div>
@@ -782,7 +782,7 @@ body {
       </div>
       <div class="signal-body" style="background:#f0fdf4">
         <div class="signal-name">Export 4-wk Avg</div>
-        <div class="signal-detail">4wk avg held at 2.086M through Sep 11 — the third consecutive week above 2.0M. Sep 11 exports were 2.213M (74.4% of production), keeping the average solidly elevated. Exports are running structurally hard and are a direct contributor to the ongoing draws.</div>
+        <div class="signal-detail">4wk avg held at 2.086M through Sep 11. Sep 11 exports were 2.213M (74.4% of production), keeping the average solidly elevated. Season highs were 2.625M (May 22) and 2.616M (Jul 3); the current pace is strong but below those peaks. Exports are running structurally hard and are a direct contributor to the recent draws.</div>
       </div>
       <div class="signal-value-col" style="background:#f0fdf4">
         <div class="signal-value" style="color:#16a34a">2.086M bbls</div>
@@ -824,7 +824,7 @@ body {
       </div>
       <div class="signal-body" style="background:#fef2f2">
         <div class="signal-name">Inventory Level</div>
-        <div class="signal-detail">109.1M bbls — second consecutive draw, down from 110.5M the prior week. Inventory remains historically extreme — #1 of 10 for the same calendar week going back to 2017. YoY surplus at +10.2M, the narrowest reading of the build season, but still a significant bearish overhang.</div>
+        <div class="signal-detail">109.1M bbls — a draw of -1.4M this week, following a +3.1M build the prior week (Sep 4) and a draw the week before that (Aug 28). Not consecutive draws; the pattern is draw/build/draw. Inventory remains historically extreme — #1 of 10 for the same calendar week. YoY surplus at +10.2M, the narrowest reading of the build season.</div>
       </div>
       <div class="signal-value-col" style="background:#fef2f2">
         <div class="signal-value" style="color:#dc2626">109.1M bbls</div>
@@ -838,7 +838,7 @@ body {
       </div>
       <div class="signal-body" style="background:#fffbeb">
         <div class="signal-name">YoY Gap Trend</div>
-        <div class="signal-detail">Gap narrowed further to +10.2M from +11.3M last week — the fourth consecutive week of narrowing and the tightest reading of the season. Still bearish in absolute terms, but directional momentum has clearly shifted. Two strong export weeks and two consecutive draws have done real work.</div>
+        <div class="signal-detail">Gap narrowed to +10.2M from +12.9M the prior week (Sep 4) — the tightest reading of the season. The gap has not narrowed in a straight line: it went down, then up, then down again, driven by alternating draws and builds. Still bearish in absolute terms, but the overall trend since the +16.5M peak (Aug 21) is clearly lower.</div>
       </div>
       <div class="signal-value-col" style="background:#fef2f2">
         <div class="signal-value" style="color:#dc2626">+10.2M</div>
@@ -852,7 +852,7 @@ body {
       </div>
       <div class="signal-body" style="background:#fffbeb">
         <div class="signal-name">Build Season Pace</div>
-        <div class="signal-detail">Cumulative season total is 32.1M through week 24, against a 4-season average of 47.6M at this point — the build season is running at 67% of pace, a 15.5M shortfall. Two consecutive draws have deepened the deficit. This is the largest bullish offset in the market right now: even with near-record inventory, the season is not building at anything close to a normal pace.</div>
+        <div class="signal-detail">Cumulative season total is 32.1M through week 24, against a 4-season average of 47.6M at this point — the build season is running at 67% of pace, a 15.5M shortfall. The two September draws (separated by one build) have kept the deficit wide. This is the largest bullish offset in the market right now: even with near-record inventory, the season is not building at anything close to a normal pace.</div>
       </div>
       <div class="signal-value-col" style="background:#fffbeb">
         <div class="signal-value" style="color:#d97706">32.1M bbls</div>
@@ -866,7 +866,7 @@ body {
       </div>
       <div class="signal-body" style="background:#f0fdf4">
         <div class="signal-name">Export Share</div>
-        <div class="signal-detail">74.4% this week — Sep 11 exports at 2.213M are the highest of the build season. 4wk avg at 70.2%, holding the gains from the past month. Elevated export share is the structural driver of the inventory draws: production is running near records, but exports are absorbing the gain and then some.</div>
+        <div class="signal-detail">74.4% this week — Sep 11 exports at 2.213M, with the 4wk avg at 70.2%. Season highs were 2.625M (May 22) and 2.616M (Jul 3), so the current pace is strong but not a season record. Elevated export share is the structural driver of the recent inventory draws: production is running near records, but exports are absorbing the gain and then some.</div>
       </div>
       <div class="signal-value-col" style="background:#f0fdf4">
         <div class="signal-value" style="color:#16a34a">70.2%</div>
@@ -880,7 +880,7 @@ body {
       <div class="card-title">Export Monitor — 4-Week Rolling Avg
         <span class="card-badge badge-green">Current avg 2.086M vs prior 2.048M</span>
       </div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Weekly export bars with 4-week rolling average (amber line) and prior 4-week average (dashed). Current avg 2.086M, up from prior 2.048M — Sep 11 exports of 2.213M were the highest of the build season, contributing to a second consecutive inventory draw.</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Weekly export bars with 4-week rolling average (amber line) and prior 4-week average (dashed). Current avg 2.086M, up from prior 2.048M — Sep 11 exports of 2.213M were strong but below the season highs of 2.625M (May 22) and 2.616M (Jul 3). Contributed to the Sep 11 inventory draw following a +3.1M build the prior week.</div>
       <div class="legend" style="margin-bottom:8px">
         <div class="legend-item"><div class="legend-swatch" style="background:rgba(234,88,12,0.5)"></div>Weekly exports</div>
         <div class="legend-item"><div class="legend-swatch" style="background:var(--amber)"></div>Current 4wk avg</div>
@@ -913,7 +913,7 @@ body {
       <div class="card-title">Year-over-Year Inventory Gap &amp; Trend
         <span class="card-badge badge-amber">Gap narrowing — watch closely</span>
       </div>
-      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Current inventory vs same week last year. The gap peaked at +33M in March/April and has compressed to +21.4M by late May — losing ~1.5M bbls/week. If this pace continues, the YoY advantage disappears by mid-October. Dashed line = 4-week rolling average of the gap.</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:10px">Current inventory vs same week last year. The gap peaked at +33.5M (Apr 10) and has compressed to +10.2M through Sep 11 — the tightest reading of the season. Compression has been uneven: two draws separated by a build drove most of the recent narrowing. Dashed line = 4-week rolling average of the gap.</div>
       <div class="chart-wrap" style="height:230px"><canvas id="chartYoY" role="img" aria-label="Year over year inventory gap chart" width="1320" height="460" style="display: block; box-sizing: border-box; height: 230px; width: 660px;"></canvas></div>
     </div>
   </div>
@@ -927,11 +927,11 @@ body {
       </div>
       <div>
         <div style="font-size:11px;font-family:var(--mono);color:var(--red2);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.08em">Build Season Risk</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.7">The 2026-27 build season is at 32.1M bbls through week 24, with six draws across the season (Apr 24, May 1, May 22, Jul 3, Aug 28, Sep 11). Two consecutive draws in September are unusual and signal that elevated exports are now actively pulling against inventory rather than just slowing the build. Measured against the 4-season average of 47.6M at this point, the build season is running at 67% of pace — a 15.5M shortfall. Exports hit a season high of 2.213M in the Sep 11 week (74.4% of production); the 4wk avg is at 2.086M. Inventory is at 109.1M, still historically extreme but down from the 110.5M peak two weeks ago. The Projection sheet's base case projects a season peak of 113.5M bbls. The build-season deficit is the most significant bullish offset for the winter: at the current pace, winter draw-down season begins from a lower base than the headline inventory number suggests.</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.7">The 2026-27 build season is at 32.1M bbls through week 24, with six draws across the season (Apr 24, May 1, May 22, Jul 3, Aug 28, Sep 11). Two draws in three weeks (Aug 28 and Sep 11, with a +3.1M build in between) signal that elevated exports are actively competing with inventory builds. Measured against the 4-season average of 47.6M at this point, the build season is running at 67% of pace — a 15.5M shortfall. Sep 11 exports came in at 2.213M (74.4% of production), strong but below the season highs of 2.625M (May 22) and 2.616M (Jul 3); the 4wk avg is at 2.086M. Inventory is at 109.1M, still historically extreme but down from the 110.5M peak two weeks ago. The Projection sheet's base case projects a season peak of 113.5M bbls. The build-season deficit is the most significant bullish offset for the winter: at the current pace, winter draw-down season begins from a lower base than the headline inventory number suggests.</div>
       </div>
       <div>
         <div style="font-size:11px;font-family:var(--mono);color:var(--blue2);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.08em">Hormuz Factor</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.7">WTI crossed $100 and reached $102.43 by Sep 16, carrying both propane hubs to their highest levels of the year: Conway to 77.8¢, Belvieu to 86.8¢. The NS spread is at $0.091. C3:WTI ratios at 32-36% remain below historical averages; propane has not outrun crude on the way up. Persian Gulf production capacity (Ras Laffan, Ju'aymah) remains offline for years regardless of the Hormuz shipping reopening. The sustained high export pace — Sep 11 hit a season-high 2.213M — is consistent with international buyers drawing hard on US supply as Gulf-origin LPG remains constrained. The crude rally is tightening the whole supply picture simultaneously.</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.7">WTI crossed $100 and reached $102.43 by Sep 16, carrying both propane hubs to their highest levels of the year: Conway to 77.8¢, Belvieu to 86.8¢. The NS spread is at $0.091. C3:WTI ratios at 32-36% remain below historical averages; propane has not outrun crude on the way up. Persian Gulf production capacity (Ras Laffan, Ju'aymah) remains offline for years regardless of the Hormuz shipping reopening. The sustained high export pace — Sep 11 exports at 2.213M (74.4% of production), below the season highs of 2.625M and 2.616M but structurally elevated — is consistent with international buyers drawing hard on US supply as Gulf-origin LPG remains constrained. The crude rally is tightening the whole supply picture simultaneously.</div>
       </div>
     </div>
   </div>
@@ -1033,7 +1033,7 @@ body {
         Very Large Gas Carriers (VLGCs) are the sole vessels capable of moving propane economically on long-haul US-to-Asia routes. The global fleet is finite — approximately <strong style="color:var(--text)">370–390 active VLGCs</strong> worldwide, with an orderbook of ~27% of existing fleet delivering through 2027–28. Fleet growth is accelerating — 7% in 2026, peaking at 16% in 2027 — but new vessels take years to build and deploy.
         <br><br>
         <strong style="color:var(--text)">Why your weekly EIA export number is inherently noisy</strong><br>
-        A standard VLGC carries approximately 500,000–550,000 barrels of propane per voyage. At current US export rates of ~12–15 VLGC loadings per week, a single vessel delayed by 2–3 days — berth congestion, weather, Panama Canal slot timing — moves the weekly EIA print by 500K+ barrels. The late-May swing between 2.625M and 1.649M bbls in consecutive weeks was a clean example; the Sep 11 week's 2.213M — a season high — shows the demand pull from international buyers is accelerating as Gulf LPG supply remains constrained.
+        A standard VLGC carries approximately 500,000–550,000 barrels of propane per voyage. At current US export rates of ~12–15 VLGC loadings per week, a single vessel delayed by 2–3 days — berth congestion, weather, Panama Canal slot timing — moves the weekly EIA print by 500K+ barrels. The late-May swing between 2.625M and 1.649M bbls in consecutive weeks was a clean example; the Sep 11 week's 2.213M (strong, though below the season highs of 2.625M and 2.616M) reflects sustained demand pull from international buyers as Gulf LPG supply remains constrained.
         <br><br>
         <strong style="color:var(--text)">The Cape of Good Hope factor</strong><br>
         Panama Canal auction fees hit record highs in April 2026 — some slots reportedly fetching $4 million. A growing share of US-to-Asia cargoes now route via Cape of Good Hope instead, adding <strong style="color:var(--purple)">~14 days to each voyage</strong> (30 days → 44 days). Longer voyages mean ships return to load less frequently, creating lumpier scheduling patterns and wider week-to-week export variance. Houston–Chiba VLGC freight surged ~55% month-over-month in April 2026, reaching near $290/metric ton.
@@ -1075,7 +1075,7 @@ body {
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:16px">
       <div style="padding:14px 16px;background:rgba(220,38,38,0.07);border-radius:6px;border-left:3px solid var(--red2)">
         <div style="font-size:11px;font-family:var(--mono);color:var(--red2);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">Export Demand Pull</div>
-        <div style="font-size:12px;color:var(--text2);line-height:1.7">Asian buyers replacing Persian Gulf supply with US propane for the next 3–5 years. This structurally competes with domestic storage builds — every barrel exported is a barrel not in a tank in Kansas or Iowa. The weak 2026-27 build season pace (59% below 5-year average) is partly a direct consequence.</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.7">Asian buyers replacing Persian Gulf supply with US propane for the next 3–5 years. This structurally competes with domestic storage builds — every barrel exported is a barrel not in a tank in Kansas or Iowa. The weak 2026-27 build season pace — running at 67% of the 4-season average, a 15.5M shortfall through week 24 — is partly a direct consequence.</div>
       </div>
       <div style="padding:14px 16px;background:rgba(16,185,129,0.07);border-radius:6px;border-left:3px solid var(--green)">
         <div style="font-size:11px;font-family:var(--mono);color:var(--green2);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">Production Baseline</div>
@@ -1083,7 +1083,7 @@ body {
       </div>
       <div style="padding:14px 16px;background:rgba(245,158,11,0.07);border-radius:6px;border-left:3px solid var(--amber)">
         <div style="font-size:11px;font-family:var(--mono);color:var(--amber2);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">The Forward Buying Window</div>
-        <div style="font-size:12px;color:var(--text2);line-height:1.7">Record inventory and C3:WTI ratios near the 18th–23rd percentile of their seasonal range still mark a historically favorable forward buying window, even after the Hormuz-driven crude selloff lifted the ratio off its springtime lows. But the export structural shift means this window is finite. As Persian Gulf supply stays offline for years, sustained Asian demand for US propane will keep pressure on domestic builds — and the window between spot value and forward risk may narrow sooner than a pure inventory analysis suggests.</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.7">C3:WTI ratios at 31.9% (Conway) and 35.6% (Belvieu) remain well below their historical averages of ~46% and ~49%, meaning propane is still cheap relative to crude even with WTI above $100. Absolute prices have moved above the shale-era median with crude's surge, so the "cheap propane" signal is now specifically a relative-value story, not an absolute one. As Persian Gulf supply stays offline for years, sustained Asian demand for US propane will keep pressure on domestic builds — and the window between relative value and forward risk may narrow as crude remains elevated.</div>
       </div>
     </div>
     <div style="padding:12px 16px;background:var(--bg3);border-radius:6px;border:1px solid var(--border);font-size:12px;color:var(--text2);line-height:1.7">
@@ -1355,13 +1355,13 @@ function buildSignalScorecard(){
   const signals=[
     {name:'CWY:WTI Ratio',value:'31.9%',sub:'CWY vs crude · Sep 16',detail:'31.9% as of Sep 16 — WTI crossed $100 to $102.43, carrying Conway to 77.8¢. The ratio is holding in its recent range; propane is tracking crude higher but not outrunning it. Historical avg ~46%; both hubs are now above their seasonal medians for the first time this build season.',status:'Bullish C3',icon:'🐂',bg:'#eff6ff',iconBg:'#2563eb'},
     {name:'Conway (CWY)',value:'$0.778',sub:'per gal · Sep 16 · 60th pctile era',detail:'Conway at 77.8¢ by Sep 16, at the 60th percentile of shale-era observations. With WTI over $100, both hubs are now above the shale-era median — a significant shift from where prices sat through most of the summer. Midwest basis still under some pressure from elevated inventory, but the picture is improving.',status:'Neutral',icon:'➖',bg:'#f8fafc',iconBg:'#64748b'},
-    {name:'Export 4-wk Avg',value:'2.086M bbls',sub:'4wk avg · Sep 11: 2.213M · above 2.0M',detail:'4wk avg held at 2.086M through Sep 11 — the third consecutive week above 2.0M. Sep 11 exports were 2.213M (74.4% of production), keeping the average solidly elevated. Exports are running structurally hard and are a direct contributor to the ongoing draws.',status:'Improving',icon:'📈',bg:'#f0fdf4',iconBg:'#16a34a'},
+    {name:'Export 4-wk Avg',value:'2.086M bbls',sub:'4wk avg · Sep 11: 2.213M · above 2.0M',detail:'4wk avg held at 2.086M through Sep 11. Sep 11 exports were 2.213M (74.4% of production), keeping the average solidly elevated. Season highs were 2.625M (May 22) and 2.616M (Jul 3); the current pace is strong but below those peaks. Exports are running structurally hard and are a direct contributor to the recent draws.',status:'Improving',icon:'📈',bg:'#f0fdf4',iconBg:'#16a34a'},
     {name:'TET:WTI Ratio',value:'35.6%',sub:'TET vs crude · Sep 16',detail:'35.6% as of Sep 16 — below historical avg ~49%. NS spread narrowed slightly to $0.091 as Conway firmed relative to Belvieu. Gulf basis remains firm on strong export demand. Belvieu at 62nd shale-era percentile.',status:'Bullish C3',icon:'🐂',bg:'#eff6ff',iconBg:'#2563eb'},
     {name:'Mt Belvieu (TET)',value:'$0.868',sub:'per gal · Sep 16 · NS spread $0.091',detail:'Belvieu at 86.8¢ by Sep 16, the 62nd percentile of shale-era observations. NS spread at $0.091, above the structural export-era avg of ~$0.046. Gulf basis holding firm on sustained export demand. Both hubs now above their shale-era medians.',status:'Neutral',icon:'➖',bg:'#f8fafc',iconBg:'#64748b'},
-    {name:'Inventory Level',value:'109.1M bbls',sub:'Still record-high territory · Sep 11',detail:'109.1M bbls — second consecutive draw, down from 110.5M the prior week. Inventory remains historically extreme — #1 of 10 for the same calendar week going back to 2017. YoY surplus at +10.2M, the narrowest reading of the build season, but still a significant bearish overhang.',status:'Bearish',icon:'🐻',bg:'#fef2f2',iconBg:'#dc2626'},
-    {name:'YoY Gap Trend',value:'+10.2M',sub:'narrowed from +11.3M · Sep 11',detail:'Gap narrowed further to +10.2M from +11.3M last week — the fourth consecutive week of narrowing and the tightest reading of the season. Still bearish in absolute terms, but directional momentum has clearly shifted. Two strong export weeks and two consecutive draws have done real work.',status:'Bearish',icon:'🐻',bg:'#fef2f2',iconBg:'#dc2626'},
-    {name:'Build Season Pace',value:'32.1M bbls',sub:'thru week 24 · 4-season avg 47.6M',detail:'Cumulative season total is 32.1M through week 24, against a 4-season average of 47.6M at this point — the build season is running at 67% of pace, a 15.5M shortfall. Two consecutive draws have deepened the deficit. This is the largest bullish offset in the market right now: even with near-record inventory, the season is not building at anything close to a normal pace.',status:'Watch',icon:'👁️',bg:'#fffbeb',iconBg:'#d97706'},
-    {name:'Export Share',value:'70.2%',sub:'4wk avg · Sep 11: 74.4% · sustained',detail:'74.4% this week — Sep 11 exports at 2.213M are the highest of the build season. 4wk avg at 70.2%, holding the gains from the past month. Elevated export share is the structural driver of the inventory draws: production is running near records, but exports are absorbing the gain and then some.',status:'Improving',icon:'📈',bg:'#f0fdf4',iconBg:'#16a34a'},
+    {name:'Inventory Level',value:'109.1M bbls',sub:'Still record-high territory · Sep 11',detail:'109.1M bbls — a draw of -1.4M this week, following a +3.1M build the prior week (Sep 4) and a draw the week before that (Aug 28). Not consecutive draws; the pattern is draw/build/draw. Inventory remains historically extreme — #1 of 10 for the same calendar week. YoY surplus at +10.2M, the narrowest reading of the build season.',status:'Bearish',icon:'🐻',bg:'#fef2f2',iconBg:'#dc2626'},
+    {name:'YoY Gap Trend',value:'+10.2M',sub:'narrowed from +11.3M · Sep 11',detail:'Gap narrowed to +10.2M from +12.9M the prior week (Sep 4) — the tightest reading of the season. The gap has not narrowed in a straight line: it went down, then up, then down again, driven by alternating draws and builds. Still bearish in absolute terms, but the overall trend since the +16.5M peak (Aug 21) is clearly lower.',status:'Bearish',icon:'🐻',bg:'#fef2f2',iconBg:'#dc2626'},
+    {name:'Build Season Pace',value:'32.1M bbls',sub:'thru week 24 · 4-season avg 47.6M',detail:'Cumulative season total is 32.1M through week 24, against a 4-season average of 47.6M at this point — the build season is running at 67% of pace, a 15.5M shortfall. The two September draws (separated by one build) have kept the deficit wide. This is the largest bullish offset in the market right now: even with near-record inventory, the season is not building at anything close to a normal pace.',status:'Watch',icon:'👁️',bg:'#fffbeb',iconBg:'#d97706'},
+    {name:'Export Share',value:'70.2%',sub:'4wk avg · Sep 11: 74.4% · sustained',detail:'74.4% this week — Sep 11 exports at 2.213M, with the 4wk avg at 70.2%. Season highs were 2.625M (May 22) and 2.616M (Jul 3), so the current pace is strong but not a season record. Elevated export share is the structural driver of the recent inventory draws: production is running near records, but exports are absorbing the gain and then some.',status:'Improving',icon:'📈',bg:'#f0fdf4',iconBg:'#16a34a'},
   ];
   const el=document.getElementById('signalScorecard');
   el.innerHTML=signals.map(s=>`
